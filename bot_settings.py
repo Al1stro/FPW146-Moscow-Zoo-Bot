@@ -12,11 +12,9 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 load_dotenv(find_dotenv())
 
 
-# ------------
-# Bot settings
 storage = MemoryStorage()
 
-bot = Bot(token=os.getenv('TELEGRAM_TOKEN'))
+bot = Bot(token=os.getenv('6492617116:AAGrh1aCW14kEy2x-xN4hPvKFQQkk1i2YQ8'))
 
 dp = Dispatcher(
     bot=bot,
@@ -24,7 +22,5 @@ dp = Dispatcher(
 )
 
 
-# -------
-# Logging
 logging.basicConfig(level=logging.INFO)
 dp.middleware.setup(LoggingMiddleware())
